@@ -11,7 +11,11 @@
 </head>
 <body>
   <main class="product-card">
-    <img class="product-card__image" src="./images/image-product-mobile.jpg" alt="Gabrielle perfume from CHANEL">
+    <picture class="product-card__image">
+      <source media="(max-width: 576px)" srcset="./images/image-product-mobile.jpg">
+      <source media="(min-width: 577px)" srcset="./images/image-product-desktop.jpg">
+      <img src="./images/image-product-mobile.jpg" alt="Gabrielle perfume from CHANEL">
+    </picture>
     <div class="product-card__info">
       <p class="product-card__category">Perfume</p>
       <h1 class="product-card__name">Gabrielle Essence Eau De Parfum</h1>
