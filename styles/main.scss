@@ -4,6 +4,7 @@
   --main-background: hsl(30, 38%, 92%);
   --primary: hsl(158, 36%, 37%);
   --on-primary: hsl(0, 0%, 100%);
+  --active: hsl(158, 36%, 17%);
   --product-card-background: hsl(0, 0%, 100%);
   --attribution-link: hsl(228, 45%, 44%);
   --product-card-title: hsl(212, 21%, 14%);
@@ -100,6 +101,10 @@ body {
       font-weight: 700;
       font-size: 12px;
       cursor: pointer;
+
+      &:active {
+        background-color: var(--active);
+      }
 
       img {
         width: 12px;
