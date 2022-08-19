@@ -5,6 +5,9 @@
   --on-primary: hsl(0, 0%, 100%);
   --product-card-background: hsl(0, 0%, 100%);
   --attribution-link: hsl(228, 45%, 44%);
+  --product-card-title: hsl(212, 21%, 14%);
+  --body-copy-color: hsl(228, 12%, 48%);
+  --body-copy-font-size: 14px;
 }
 
 *,
@@ -32,29 +35,38 @@ body .product-card {
   border-radius: 8px;
   background-color: var(--product-card-background);
 }
-body .product-card__info {
-  display: flex;
-  flex-direction: column;
-  padding: 16px;
-}
 body .product-card__image {
   border-radius: 8px 8px 0 0;
 }
+body .product-card__info {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+}
 body .product-card__category {
+  color: var(--body-copy-color);
   font-family: "Montserrat", "sans-serif";
+  font-size: var(--body-copy-font-size);
   text-transform: uppercase;
-  letter-spacing: 8px;
+  letter-spacing: 5px;
 }
 body .product-card__name {
+  margin: 16px 0;
+  color: var(--product-card-title);
   font-family: "Fraunces", "serif";
+  line-height: 2rem;
 }
 body .product-card__description {
+  color: var(--body-copy-color);
   font-family: "Montserrat", "sans-serif";
+  font-size: var(--body-copy-font-size);
+  line-height: 1.4rem;
 }
 body .product-card__price-group {
   display: flex;
   align-items: center;
   gap: 16px;
+  margin: 20px 0 16px;
 }
 body .product-card__discounted-price {
   color: var(--primary);
@@ -62,8 +74,9 @@ body .product-card__discounted-price {
   font-size: 32px;
 }
 body .product-card__original-price {
+  color: var(--body-copy-color);
   font-family: "Montserrat", "sans-serif";
-  font-size: 12px;
+  font-size: var(--body-copy-font-size);
 }
 body .product-card__button {
   width: 100%;
@@ -79,6 +92,7 @@ body .product-card__button {
   font-family: "Montserrat", "sans-serif";
   font-weight: 700;
   font-size: 12px;
+  cursor: pointer;
 }
 body .product-card__button img {
   width: 12px;

@@ -6,6 +6,9 @@
   --on-primary: hsl(0, 0%, 100%);
   --product-card-background: hsl(0, 0%, 100%);
   --attribution-link: hsl(228, 45%, 44%);
+  --product-card-title: hsl(212, 21%, 14%);
+  --body-copy-color: hsl(228, 12%, 48%);
+  --body-copy-font-size: 14px;
 }
 
 *,
@@ -31,34 +34,43 @@ body {
     border-radius: 8px;
     background-color: var(--product-card-background);
 
+    &__image {
+        border-radius: 8px 8px 0 0;
+    }
+
     &__info {
       display: flex;
       flex-direction: column;
-      padding: 16px;
-    }
-
-    &__image {
-      border-radius: 8px 8px 0 0;
+      padding: 24px;
     }
 
     &__category {
+      color: var(--body-copy-color);
       font-family: 'Montserrat', 'sans-serif';
+      font-size: var(--body-copy-font-size);
       text-transform: uppercase;
-      letter-spacing: 8px;
+      letter-spacing: 5px;
     }
 
     &__name {
+      margin: 16px 0;
+      color: var(--product-card-title);
       font-family: 'Fraunces', 'serif';
+      line-height: 2rem;
     }
 
     &__description {
+      color: var(--body-copy-color);
       font-family: 'Montserrat', 'sans-serif';
+      font-size: var(--body-copy-font-size);
+      line-height: 1.4rem;
     }
 
     &__price-group {
       display: flex;
       align-items: center;
       gap: 16px;
+      margin: 20px 0 16px;
     }
 
     &__discounted-price {
@@ -68,8 +80,9 @@ body {
     }
 
     &__original-price {
+      color: var(--body-copy-color);
       font-family: 'Montserrat', 'sans-serif';
-      font-size: 12px;
+      font-size: var(--body-copy-font-size);
     }
 
     &__button {
@@ -86,6 +99,7 @@ body {
       font-family: 'Montserrat', 'sans-serif';
       font-weight: 700;
       font-size: 12px;
+      cursor: pointer;
 
       img {
         width: 12px;
@@ -93,14 +107,15 @@ body {
       }
     }
   }
-        .attribution {
-          font-size: 11px;
-          text-align: center;
-      position: absolute;
-        bottom: 16px;
+
+  .attribution {
+    font-size: 11px;
+    text-align: center;
+    position: absolute;
+    bottom: 16px;
 
     a {
       color: var(--attribution-link);
-      }
-      }
+    }
+  }
 }
