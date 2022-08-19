@@ -101,13 +101,4 @@ body .product-card__button:active {
 body .product-card__button img {
   width: 12px;
   height: 12px;
-}
-body .attribution {
-  font-size: 11px;
-  text-align: center;
-  position: absolute;
-  bottom: 16px;
-}
-body .attribution a {
-  color: var(--attribution-link);
 }/*# sourceMappingURL=main.css.map */
